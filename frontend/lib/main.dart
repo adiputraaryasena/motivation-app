@@ -16,7 +16,7 @@ class _LoginPageState extends State<LoginPage> {
   final passCtrl = TextEditingController(text: '123456');
 
   Future<void> doLogin() async {
-    final url = Uri.parse('http://10.0.2.2:3000/login');
+    final url = Uri.parse('http://localhost:3000/login');
     final response = await http.post(
       url,
       headers: {'Content-Type': 'application/json'},
